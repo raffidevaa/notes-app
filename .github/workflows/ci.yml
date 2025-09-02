@@ -43,7 +43,7 @@ jobs:
 
       - name: Run pytest
         run: |
-          pytest -q --maxfail=1
+          PYTHONPATH=. pytest -q --maxfail=1
 
   # 2) SAST (Bandit)
   sast:
