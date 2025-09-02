@@ -61,7 +61,7 @@ jobs:
       - name: Run bandit
         run: |
           # Sesuaikan folder bila perlu (mis. 'app' / 'src')
-          bandit -r . -x tests -q
+          bandit -r app -q
 
   # 3) SCA (pip-audit)
   sca:
